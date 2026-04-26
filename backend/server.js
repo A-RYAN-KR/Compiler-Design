@@ -71,6 +71,7 @@ app.post('/transpile', async (req, res) => {
     if (binaryPath) {
         try {
             const result = await transpileWithBinary(code, target);
+            // console.log(result);
             return res.json(result);
         } catch (err) {
             console.log('Binary transpiler failed, using JS fallback:', err.message);

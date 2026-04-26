@@ -9,7 +9,6 @@ extern int yyline;
 %}
 
 %option noyywrap
-%option nounistd
 %option noinput
 %option nounput
 

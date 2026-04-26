@@ -1,0 +1,40 @@
+// Welcome to TranspilerX — Java to C/Python!
+// Write your Java code and transpile it.
+
+public class Calculator {
+
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static int factorial(int n) {
+        int result = 1;
+        for (int i = 1; i <= n; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        int sum = add(10, 20);
+        System.out.println(sum);
+
+        int product = 5 * 6;
+        System.out.println(product);
+
+        if (sum > 25) {
+            System.out.println("Sum is large!");
+        } else {
+            System.out.println("Sum is small.");
+        }
+
+        int counter = 0;
+        while (counter < 3) {
+            System.out.println(counter);
+            counter = counter + 1;
+        }
+
+        int fact = factorial(5);
+        System.out.println(fact);
+    }
+}
